@@ -1,0 +1,54 @@
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('../fonts/CenturyGothic.woff2') format('woff2'),
+  url('../fonts/CenturyGothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Century Gothic bold';
+  src: url('../fonts/CenturyGothic-Bold.woff2') format('woff2'),
+  url('../fonts/CenturyGothic-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-weight: 300;
+  font-family: 'Century Gothic bold', sans-serif;
+  overflow-x: hidden;
+  color: var(--secondary-color);
+  counter-reset: section;
+  min-height: 100vh;
+}
+
+h2 {
+  font-weight: 600;
+  line-height: 1em;
+  margin: auto;
+  font-size: 2.4rem;
+}
+
+h3 {
+  line-height: 1em;
+}
+
+.middle-items {
+  align-items: center !important;
+}
+
+.Main {
+  min-height: calc(100vh - 64px);
+}
+p{
+  font-family: 'Century Gothic', serif;
+
+}
+.invalid{
+  color: var(--error-color);
+}
+table{
+  font-family: 'Century Gothic', sans-serif;
+  color: #1e272c;
+  margin: 4rem 0 0;
+}

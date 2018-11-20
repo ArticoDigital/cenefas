@@ -1,0 +1,29 @@
+// Variables
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import 'variables';
+@import 'generales';
+@import 'template/header';
+@import 'template/footer';
+@import 'template/H2';
+@import 'template/home';
+@import 'template/panel';
+
+.Login {
+  height: calc(100vh - 210px);
+  &-form {
+    background: white;
+    padding: 4rem 8rem ;
+    border-radius: 1rem;
+    border: .1rem solid #ddd;
+  }
+  input{
+    margin: 1rem 0;
+  }
+  a{
+    font-weight: 100;
+
+  }
+}
+
+
+
