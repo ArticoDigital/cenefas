@@ -60,7 +60,10 @@
     </a>
     @if(Auth::check())
         <ul class="Nav row is-list-less">
-            <li><a href="{{route('admin')}}">Admin</a></li>
+            <li><a href="{{route('admin')}}">Inicio</a></li>
+            <li><a href="">Usuarios</a></li>
+            <li><a href="">Categorías</a></li>
+            <li><a href="">Archivos</a></li>
             <li><a href="{{route('logout')}}">Salir</a></li>
         </ul>
     @endif
