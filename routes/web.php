@@ -15,6 +15,11 @@ Route::get('/', function () {
     return redirect('login');
 });
 
+Route::get('salir', function () {
+    Auth::logout();
+    return redirect('/');
+});
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+

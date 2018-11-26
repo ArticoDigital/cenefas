@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Category;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -13,6 +14,8 @@ class AdminController extends Controller
      */
     public function index(){
         $this->authorize('view',new User());
-        return view('admin.home');
+        return view('admin.home',[
+            'categories' => Category::ForUser()->get()
+        ]);
     }
 }

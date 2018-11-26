@@ -61,10 +61,13 @@
     @if(Auth::check())
         <ul class="Nav row is-list-less">
             <li><a href="{{route('admin')}}">Inicio</a></li>
-            <li><a href="">Usuarios</a></li>
-            <li><a href="">Categorías</a></li>
-            <li><a href="">Archivos</a></li>
-            <li><a href="{{route('logout')}}">Salir</a></li>
+            @role('Admin')
+            <li><a href="{{route('user.index')}}">Usuarios</a></li>
+            <li><a href="{{route('country.index')}}">Países</a></li>
+            <li><a href="{{route('file.index')}}">Archivos</a></li>
+            @endrole
+            <li><a href="{{route('notebook.index')}}">Mis archivos</a></li>
+            <li><a href="{{url('salir')}}">Salir</a></li>
         </ul>
     @endif
 </header>
